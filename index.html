@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>dodgeMiner</title>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser-arcade-physics.min.js"></script>
+    <style>
+        body { 
+            margin: 0; 
+            padding: 0; 
+            background-color: #1a1a1a; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+        #game-container {
+            flex-grow: 1; /* Pushes the ad to the very bottom */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+        canvas { display: block; margin: 0 auto; }
+        
+        /* The safe zone for your future ad */
+        #ad-container {
+            width: 320px;
+            height: 50px;
+            background-color: #000; /* Just a black box for now */
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container"></div>
+    
+    <div id="ad-container"></div>
+
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
